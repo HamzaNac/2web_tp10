@@ -1,0 +1,40 @@
+<?php
+
+namespace PostBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Post
+ *
+ * @ORM\Table(name="post")
+ * @ORM\Entity
+ */
+class Post
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="message", type="text", length=65535, nullable=false)
+     */
+    private $message;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="creationdate", type="datetime", nullable=false)
+     */
+    private $creationdate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}
+

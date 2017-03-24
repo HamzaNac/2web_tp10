@@ -1,0 +1,6 @@
+{% for post in posts %}
+
+    <h3>{{ post.creationdate|date("m/d/Y H:i")}}</h3>
+    <li>   {{ post.message }} </li>
+
+{% endfor %}

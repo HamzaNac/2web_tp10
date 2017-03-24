@@ -1,0 +1,13 @@
+post:
+    resource: "@PostBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+symple_network_user:
+    resource: "@SympleNetworkUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
